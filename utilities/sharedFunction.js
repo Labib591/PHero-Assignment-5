@@ -7,6 +7,6 @@ function numberFromString(id)
 
 function getButton(id){
     const button = document.getElementById(id);
-    console.log(button);
     return button;
 }
+
