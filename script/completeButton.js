@@ -27,7 +27,7 @@ completeButton1.addEventListener("click", function () {
 logSection.appendChild(div);
 
   if (presentTask === 0) {
-    alert("Thanks");
+    alert("Congrats!!!You have completed all current tasks");
   }
 });
 
@@ -58,7 +58,7 @@ completeButton2.addEventListener("click", function () {
 
 logSection.appendChild(div);
   if (presentTask === 0) {
-    alert("Thanks");
+    alert("Congrats!!!You have completed all current tasks");
   }
 });
 
@@ -90,7 +90,7 @@ completeButton3.addEventListener("click", function () {
 
 logSection.appendChild(div);
   if (presentTask === 0) {
-    alert("Thanks");
+    alert("Congrats!!!You have completed all current tasks");
   }
 });
 
@@ -123,7 +123,7 @@ completeButton4.addEventListener("click", function () {
 
 logSection.appendChild(div);
   if (presentTask === 0) {
-    alert("Thanks");
+    alert("Congrats!!!You have completed all current tasks");
   }
 });
 
@@ -155,7 +155,7 @@ completeButton5.addEventListener("click", function () {
 
 logSection.appendChild(div);
   if (presentTask === 0) {
-    alert("Thanks");
+    alert("Congrats!!!You have completed all current tasks");
   }
 });
 
@@ -188,6 +188,6 @@ completeButton6.addEventListener("click", function (event) {
 logSection.appendChild(div);
 
   if (presentTask === 0) {
-    alert("Thanks");
+    alert("Congrats!!!You have completed all current tasks");
   }
 });
