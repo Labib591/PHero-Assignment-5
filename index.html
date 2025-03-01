@@ -17,7 +17,7 @@
       rel="stylesheet"
     />
   </head>
-  <body class="bg-[#F4F7FF] font-[poppins]">
+  <body class="bg-[#F4F7FF] font-[poppins] py-6">
     <section class="max-w-7xl mx-auto py-6 bg-white px-4 rounded-lg">
       <header>
         <nav class="flex justify-between">
@@ -33,7 +33,7 @@
               class="bg-[#F4F7FF] w-32 flex justify-center items-center rounded-[2rem] p-2 gap-2"
             >
               <img src="assets/checkbox.png" alt="" />
-              <h2 class="text-3xl font-bold">23</h2>
+              <h2 id="total-task" class="text-3xl font-bold">23</h2>
             </div>
             <button><img src="assets/theme-btn.png" alt="" /></button>
           </div>
@@ -54,7 +54,7 @@
             </div>
             <div>
               <p class="font-medium text-base opacity-80">Task Assigned</p>
-              <h1 class="text-3xl font-bold">06</h1>
+              <h1  class="text-3xl font-bold">0<span id="recent-task">6</span></h1>
             </div>
           </div>
           <div
@@ -97,7 +97,7 @@
                   <p class="opacity-80">Deadline</p>
                   <h3 class="font-medium text-sm">21 March 2025</h3>
                 </div>
-                <button class="bg-[#3752FD] text-white font-medium px-4 py-2 rounded-lg">Completed</button>
+                <button id="completeButton-1" class="bg-[#3752FD] text-white font-medium px-4 py-2 rounded-lg cursor-pointer">Completed</button>
               </div>
             </div>
             <div class="bg-[#F4F7FF] rounded-lg p-6 flex flex-col gap-4">
@@ -116,7 +116,7 @@
                   <p class="opacity-80">Deadline</p>
                   <h3 class="font-medium text-sm">21 March 2025</h3>
                 </div>
-                <button class="bg-[#3752FD] text-white font-medium px-4 py-2 rounded-lg">Completed</button>
+                <button id="completeButton-2" class="bg-[#3752FD] text-white font-medium px-4 py-2 rounded-lg cursor-pointer">Completed</button>
               </div>
             </div>
             <div class="bg-[#F4F7FF] rounded-lg p-6 flex flex-col gap-4">
@@ -135,7 +135,7 @@
                   <p class="opacity-80">Deadline</p>
                   <h3 class="font-medium text-sm">21 March 2025</h3>
                 </div>
-                <button class="bg-[#3752FD] text-white font-medium px-4 py-2 rounded-lg">Completed</button>
+                <button id="completeButton-3" class="bg-[#3752FD] text-white font-medium px-4 py-2 rounded-lg cursor-pointer">Completed</button>
               </div>
             </div>
             <div class="bg-[#F4F7FF] rounded-lg p-6 flex flex-col gap-4">
@@ -154,7 +154,7 @@
                   <p class="opacity-80">Deadline</p>
                   <h3 class="font-medium text-sm">21 March 2025</h3>
                 </div>
-                <button class="bg-[#3752FD] text-white font-medium px-4 py-2 rounded-lg">Completed</button>
+                <button id="completeButton-4" class="bg-[#3752FD] text-white font-medium px-4 py-2 rounded-lg cursor-pointer">Completed</button>
               </div>
             </div>
             <div class="bg-[#F4F7FF] rounded-lg p-6 flex flex-col gap-4">
@@ -173,7 +173,7 @@
                   <p class="opacity-80">Deadline</p>
                   <h3 class="font-medium text-sm">21 March 2025</h3>
                 </div>
-                <button class="bg-[#3752FD] text-white font-medium px-4 py-2 rounded-lg">Completed</button>
+                <button id="completeButton-5" class="bg-[#3752FD] text-white font-medium px-4 py-2 rounded-lg cursor-pointer">Completed</button>
               </div>
             </div>
             <div class="bg-[#F4F7FF] rounded-lg p-6 flex flex-col gap-4">
@@ -192,19 +192,34 @@
                   <p class="opacity-80">Deadline</p>
                   <h3 class="font-medium text-sm">21 March 2025</h3>
                 </div>
-                <button class="bg-[#3752FD] text-white font-medium px-4 py-2 rounded-lg">Completed</button>
+                <button id="completeButton-6" class="bg-[#3752FD] text-white font-medium px-4 py-2 rounded-lg cursor-pointer">Completed</button>
               </div>
             </div>
 
             
         </section>
       </section>
-      <section class="col-span-1 bg-white rounded-lg">
+      <section class="col-span-1 bg-white rounded-lg p-6 flex flex-col items-center gap-5">
         <div class="flex justify-center gap-4">
             <img src="assets/activity.png" alt="">
             <h2>Activity Log</h2>
         </div>
+        <button class="bg-[#3752FD] text-white font-medium px-4 py-2 rounded-lg mx-auto items-center cursor-pointer">Clear History</button>
+
+        <section class="mt-14 flex flex-col gap-3">
+            <div class="bg-[#F4F7FF] rounded-lg p-4">
+                <p>You have completed the task Add Dark Mode at this time</p>
+            </div>
+            <div class="bg-[#F4F7FF] rounded-lg p-4">
+                <p>You have completed the task Add Dark Mode at this time</p>
+            </div>
+        </section>
       </section>
     </section>
+
+    <script src="utilities/sharedFunction.js"></script>
+    <script src="script/completeButton.js"></script>
+    
   </body>
+
 </html>
