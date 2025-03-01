@@ -9,4 +9,3 @@ function getButton(id){
     const button = document.getElementById(id);
     return button;
 }
-
